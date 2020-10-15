@@ -1,0 +1,33 @@
+{
+    "name": "dominicwatts/clearance",
+    "description": "Magento 2 flag items as clearance, landing page and widget",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Dominic Xigen",
+            "email": "dominic@xigen.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require": {
+        "magento/framework": "^102.0|^103.0",
+        "magento/module-layered-navigation": "*",
+        "magento/module-catalog": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Xigen\\Clearance\\": ""
+        }
+    }
+}
